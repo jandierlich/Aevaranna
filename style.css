@@ -452,7 +452,7 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visib
 .question-block label { display: block; font-size: .78rem; color: var(--ink-dim); margin-bottom: 6px; }
 .question-block input {
   width: 100%; background: var(--bg-elev); border: 1px solid var(--line); color: var(--ink);
-  padding: 11px 13px; border-radius: 12px; font-size: .92rem;
+  padding: 11px 13px; border-radius: 12px; font-size: .92rem; height: 44px; box-sizing: border-box;
 }
 .question-echo {
   font-family: Georgia, serif; font-style: italic; font-size: .95rem; color: var(--accent-2);
@@ -695,9 +695,9 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visib
 .num-title { font-family: Georgia, serif; font-weight: 700; font-size: .98rem; color: var(--ink); margin: 0 0 4px; }
 .num-text { font-size: .85rem; margin: 0; }
 input[type="date"] {
-  width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box;
+  width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box; height: 44px;
   background: var(--bg-elev); border: 1px solid var(--line); color: var(--ink);
-  padding: 10px 8px; border-radius: 10px; font-size: .88rem; font-family: inherit;
+  padding: 11px 8px 11px 13px; border-radius: 12px; font-size: .92rem; font-family: inherit;
   -webkit-appearance: none; appearance: none;
 }
 input[type="date"]::-webkit-date-and-time-value { text-align: left; }
