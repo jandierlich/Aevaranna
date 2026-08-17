@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no"/>
+<title>AEVARANNA – Tarot</title>
+<meta name="description" content="AEVARANNA: das vollständige 78-Karten-Tarot zum Legen, Nachschlagen und Lernen – mit eigens gestalteten Kartenmotiven."/>
+<meta name="theme-color" content="#100C1A"/>
+<link rel="manifest" href="manifest.json"/>
+<link rel="apple-touch-icon" href="icon-180.png"/>
+<link rel="icon" href="icon-192.png"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="AEVARANNA"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="statusbar-scrim" aria-hidden="true"></div>
+
+  <header class="app-header" id="miniHeader">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="none" stroke="#C9A46A" stroke-width="1.5"/><circle cx="20" cy="20" r="4" fill="#C9A46A"/><path d="M20 2 L20 10 M20 30 L20 38 M2 20 L10 20 M30 20 L38 20" stroke="#C9A46A" stroke-width="1.2"/></svg>
+      <span class="wordmark">AEVARANNA</span>
+    </div>
+  </header>
+
+  <main id="view"></main>
+
+  <div id="cardModal" class="modal"></div>
+
+  <nav class="tabbar">
+    <button class="navbtn" data-tab="start">
+      <svg class="navicon" viewBox="0 0 24 24"><path d="M4 12 L12 5 L20 12 M6 10.5 V19 H10 V14 H14 V19 H18 V10.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      Start
+    </button>
+    <button class="navbtn" data-tab="legen">
+      <svg class="navicon" viewBox="0 0 24 24"><rect x="4" y="6" width="10" height="14" rx="1.6" transform="rotate(-8 9 13)" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="10" y="5" width="10" height="14" rx="1.6" transform="rotate(8 15 12)" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      Legen
+    </button>
+    <button class="navbtn" data-tab="lexikon">
+      <svg class="navicon" viewBox="0 0 24 24"><path d="M5 5 H12 V19 H5 Z M12 5 H19 V19 H12 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 5 V19" stroke="currentColor" stroke-width="1.2"/></svg>
+      Lexikon
+    </button>
+    <button class="navbtn" data-tab="lernen">
+      <svg class="navicon" viewBox="0 0 24 24"><circle cx="12" cy="11" r="6.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 20 L9 16.5 M15 20 L15 16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="11" r="1.6" fill="currentColor"/></svg>
+      Lernen
+    </button>
+    <button class="navbtn" data-tab="anleitung">
+      <svg class="navicon" viewBox="0 0 24 24"><path d="M6 4 H16 L19 7 V20 H6 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M16 4 V7 H19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 12 H15.5 M8.5 15.5 H15.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      Anleitung
+    </button>
+    <button class="navbtn" data-tab="mehr">
+      <svg class="navicon" viewBox="0 0 24 24"><circle cx="6" cy="12" r="1.7" fill="currentColor"/><circle cx="12" cy="12" r="1.7" fill="currentColor"/><circle cx="18" cy="12" r="1.7" fill="currentColor"/></svg>
+      Mehr
+    </button>
+  </nav>
+
+  <script src="no-zoom.js"></script>
+  <script src="cards.js"></script>
+  <script src="art.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
