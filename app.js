@@ -265,7 +265,7 @@ function openCustomSpreadForm() {
   area.innerHTML = `
     <div class="custom-spread-form">
       <h3 style="margin-top:0">Eigene Legung erstellen</h3>
-      <input type="text" id="csName" placeholder="Name der Legung (z. B. Beziehungs-Legung)"/>
+      <input type="text" id="csName" placeholder="Name der Legung (z. B. Beziehungs-Legung)" autocomplete="off"/>
       <div id="csPositions"></div>
       <button class="btn-ghost" id="csAddPos">+ Position hinzufügen</button>
       <div class="cs-actions">
@@ -277,7 +277,7 @@ function openCustomSpreadForm() {
   function addPosRow(val) {
     const row = document.createElement("div");
     row.className = "cs-pos-row";
-    row.innerHTML = `<input type="text" class="csPosInput" placeholder="Positionsname" value="${val || ""}"/><button class="btn-ghost cs-remove">×</button>`;
+    row.innerHTML = `<input type="text" class="csPosInput" placeholder="Positionsname" value="${val || ""}" autocomplete="off"/><button class="btn-ghost cs-remove">×</button>`;
     row.querySelector(".cs-remove").addEventListener("click", () => row.remove());
     posWrap.appendChild(row);
   }
@@ -319,7 +319,7 @@ function startSpread(key) {
     <div class="spread-desc">${spread.desc}</div>
     <div class="question-block">
       <label for="questionInput">Deine Frage (optional)</label>
-      <input type="text" id="questionInput" maxlength="140" placeholder="Wonach möchtest du schauen?"/>
+      <input type="text" id="questionInput" maxlength="140" placeholder="Wonach möchtest du schauen?" autocomplete="off"/>
     </div>
     <button class="btn-primary" id="drawBtn">Karten ziehen</button>
     <div id="drawResult"></div>`;
@@ -1225,7 +1225,7 @@ function renderOrakel(root) {
     <section class="panel">
       <div class="question-block">
         <label for="oracleQuestion">Deine Frage (optional)</label>
-        <input type="text" id="oracleQuestion" maxlength="140" placeholder="Soll ich …?"/>
+        <input type="text" id="oracleQuestion" maxlength="140" placeholder="Soll ich …?" autocomplete="off"/>
       </div>
       <div class="pendulum-stage" id="pendulumStage">
         <div class="pendulum-arm">
@@ -1380,7 +1380,7 @@ function renderWunsch(root) {
     </div>
     <section class="panel">
       <div class="wish-add-row">
-        <input type="text" id="wishInput" maxlength="140" placeholder="Ein Wunsch oder Ziel…"/>
+        <input type="text" id="wishInput" maxlength="140" placeholder="Ein Wunsch oder Ziel…" autocomplete="off"/>
         <button class="btn-primary" id="wishAddBtn">+</button>
       </div>
 
@@ -1469,7 +1469,7 @@ function renderHexenbrett(root) {
     <section class="panel">
       <div class="question-block">
         <label for="hbQuestion">Deine Frage (optional)</label>
-        <input type="text" id="hbQuestion" maxlength="140" placeholder="Was möchtest du wissen?"/>
+        <input type="text" id="hbQuestion" maxlength="140" placeholder="Was möchtest du wissen?" autocomplete="off"/>
       </div>
 
       <div class="hb-board" id="hbBoard">
@@ -1618,7 +1618,7 @@ function renderNumerologie(root) {
       </div>
       <div class="question-block">
         <label for="numName">Name (optional, für die Namenszahl)</label>
-        <input type="text" id="numName" maxlength="60" placeholder="Vor- und Nachname"/>
+        <input type="text" id="numName" maxlength="60" placeholder="Vor- und Nachname" autocomplete="off" autocapitalize="words" autocorrect="off" spellcheck="false" name="aevaranna-numname"/>
       </div>
       <button class="btn-primary" id="numCalcBtn" style="width:100%">Berechnen</button>
       <div id="numResult" class="num-result"></div>

@@ -1,4 +1,4 @@
-const CACHE = "aevaranna-tarot-v23";
+const CACHE = "aevaranna-tarot-v24";
 const ASSETS = [
   "./index.html",
   "./style.css",
