@@ -1617,8 +1617,8 @@ function renderNumerologie(root) {
         <input type="date" id="numBirthdate"/>
       </div>
       <div class="question-block">
-        <label for="numName">Name (optional, für die Namenszahl)</label>
-        <input type="text" id="numName" maxlength="60" placeholder="Vor- und Nachname" autocomplete="off" autocapitalize="words" autocorrect="off" spellcheck="false" name="aevaranna-numname"/>
+        <label for="numFullText">Name (optional, für die Namenszahl)</label>
+        <input type="text" id="numFullText" maxlength="60" placeholder="z. B. Anna Mustermann" autocomplete="nope" autocapitalize="words" autocorrect="off" spellcheck="false" name="feld-b7x2" data-lpignore="true" data-form-type="other"/>
       </div>
       <button class="btn-primary" id="numCalcBtn" style="width:100%">Berechnen</button>
       <div id="numResult" class="num-result"></div>
@@ -1628,7 +1628,7 @@ function renderNumerologie(root) {
 
   document.getElementById("numCalcBtn").addEventListener("click", () => {
     const dateVal = document.getElementById("numBirthdate").value;
-    const nameVal = document.getElementById("numName").value.trim();
+    const nameVal = document.getElementById("numFullText").value.trim();
     const resultEl = document.getElementById("numResult");
 
     if (!dateVal) {

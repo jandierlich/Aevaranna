@@ -336,7 +336,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent-2); }
 
 /* ---------- Fokus-Sichtbarkeit ---------- */
 button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visible {
-  outline: 2px solid var(--accent-2); outline-offset: 2px;
+  outline: none;
 }
 
 /* ---------- Startseite / Hero ---------- */
